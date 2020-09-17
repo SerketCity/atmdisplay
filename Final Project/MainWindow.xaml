@@ -1,0 +1,31 @@
+﻿<Window x:Class="Final_Project.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Final_Project"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="542.437" Width="1002.941">
+    <Grid Margin="0,0,-6.2,-0.2">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="38*"/>
+            <RowDefinition Height="483*"/>
+        </Grid.RowDefinitions>
+        <TextBlock TextWrapping="Wrap" Text="Fictional Bank" Margin="0,10,359.8,0" Height="49" FontFamily="Script MT Bold" FontSize="48" HorizontalAlignment="Right" VerticalAlignment="Top" Grid.RowSpan="2"/>
+        <Border BorderBrush="Black" BorderThickness="2" Height="49" Margin="0,10,345,0" VerticalAlignment="Top" Padding="0,10,10,0" CornerRadius="10" Grid.RowSpan="2" HorizontalAlignment="Right" Width="316"/>
+        <TextBlock TextWrapping="Wrap" Text="ATM" VerticalAlignment="Top" Margin="356,26.4,360,0" Height="55" Grid.Row="1" FontFamily="Impact" TextAlignment="Center" FontSize="48"/>
+        <Label x:Name="atmLabel" Content="ATM#:" VerticalAlignment="Top" Margin="342,118.4,588,0" Grid.Row="1" Height="36" FontSize="20"/>
+        <TextBox x:Name="atmBox" Height="32" TextWrapping="Wrap" VerticalAlignment="Top" Margin="415,122.4,360,0" Grid.Row="1" FontSize="20"/>
+        <Label x:Name="pinLabel" Content="PIN#:" VerticalAlignment="Top" Margin="342,159.4,593,0" Grid.Row="1" Height="37" FontSize="20"/>
+        <TextBox x:Name="pinBox" Height="32" TextWrapping="Wrap" VerticalAlignment="Top" Margin="415,164.4,360,0" Grid.Row="1" FontSize="20"/>
+        <Button x:Name="loginButton" Content="Log In" VerticalAlignment="Top" Margin="342,201.4,360,0" Grid.Row="1" Height="27" FontSize="16" Click="LogIn"/>
+        <Button x:Name="logoutButton" Content="Log Out" VerticalAlignment="Top" Margin="342,327.4,360,0" Grid.Row="1" FontSize="16" Click="LogOut" Visibility="Hidden"/>
+        <Button x:Name="withdrawButton" Content="Withdraw" VerticalAlignment="Top" Margin="544,281.4,360,0" Grid.Row="1" FontSize="16" Click="Withdraw" Visibility="Hidden"/>
+        <TextBox x:Name="withdrawBox" HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" Text="0.00" VerticalAlignment="Top" Width="186" Margin="342,281.4,0,0" Grid.Row="1" FontSize="20" TextAlignment="Right" Visibility="Hidden"/>
+        <Label x:Name="balanceLabel" Content="Balance: " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="342,96.4,0,0" Grid.Row="1" FontSize="20" Visibility="Hidden"/>
+        <Label x:Name="balanceTotalLabel" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="435,96.4,0,0" Grid.Row="1" FontSize="20" Width="208" Visibility="Hidden"/>
+        <Label x:Name="transactionsLabel" Content="Transactions:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="342,138.4,0,0" Grid.Row="1" FontSize="16" Visibility="Hidden"/>
+        <Label x:Name="transactionsList" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="448,138.4,0,0" Grid.Row="1" FontSize="16" Width="195" Height="138" Visibility="Hidden"/>
+
+    </Grid>
+</Window>
